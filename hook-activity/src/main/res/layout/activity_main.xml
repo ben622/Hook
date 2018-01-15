@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal|center_vertical"
+    tools:context="com.ben.android.hook_activity.MainActivity">
+
+    <Button
+        android:id="@+id/id_use_context_redirect"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="使用ApplicationContext进行跳转"
+        android:onClick="onClick"/>
+    <Button
+        android:id="@+id/id_use_activity_redirect"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="使用Activity进行跳转"
+        android:onClick="onClick"/>
+</LinearLayout>
