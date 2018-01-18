@@ -1,4 +1,4 @@
-package com.ben.android.hook;
+package com.ben.android.hook_example_app;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;

@@ -1,4 +1,4 @@
-package com.ben.android.hook;
+package com.ben.android.hook_example_app;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;
@@ -21,6 +21,6 @@ public class ExampleInstrumentedTest {
         // Context of the app under test.
         Context appContext = InstrumentationRegistry.getTargetContext();
 
-        assertEquals("com.ben.android.hook", appContext.getPackageName());
+        assertEquals("com.ben.android.hook_example_app", appContext.getPackageName());
     }
 }

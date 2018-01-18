@@ -1,4 +1,4 @@
-package com.ben.android.hook;
+package com.ben.android.hook_example_app;
 
 import org.junit.Test;
 
