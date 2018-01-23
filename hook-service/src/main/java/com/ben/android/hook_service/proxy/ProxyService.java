@@ -25,7 +25,7 @@ public class ProxyService extends Service {
     public int onStartCommand(Intent intent, int flags, int startId) {
         Service service = getService(intent);
         if (service != null) {
-            service.onStartCommand(intent, flags, startId);
+            return  service.onStartCommand(intent, flags, startId);
         }
         return super.onStartCommand(intent, flags, startId);
     }
@@ -35,7 +35,7 @@ public class ProxyService extends Service {
     public IBinder onBind(Intent intent) {
         Service service = getService(intent);
         if (service != null) {
-            service.onBind(intent);
+            return service.onBind(intent);
         }
         return null;
     }
@@ -44,7 +44,7 @@ public class ProxyService extends Service {
     public boolean onUnbind(Intent intent) {
         Service service = getService(intent);
         if (service != null) {
-            service.onUnbind(intent);
+            return service.onUnbind(intent);
         }
         return super.onUnbind(intent);
     }

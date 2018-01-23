@@ -118,4 +118,9 @@ public class ServiceManager {
             throw new ClassNotFoundException("ClassNotFound@" + rawIntent.getComponent().getClassName() + ",若目标在插件中请先将插件加载到宿主中");
         }
     }
+
+    public static Service bindService(Intent intent) {
+
+        return null;
+    }
 }
