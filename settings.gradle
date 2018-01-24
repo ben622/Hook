@@ -1,1 +1,1 @@
-include ':proxy', ':hook-activity', ':hook-clipservice', ':intercept-activity', ':hook-example-app', ':hook-breceiver', ':hook-service'
+include ':proxy', ':hook-activity', ':hook-clipservice', ':intercept-activity', ':hook-example-app', ':hook-breceiver', ':hook-service', ':hook-cprovider'

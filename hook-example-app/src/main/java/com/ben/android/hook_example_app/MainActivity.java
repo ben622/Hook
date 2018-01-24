@@ -2,6 +2,7 @@ package com.ben.android.hook_example_app;
 
 import android.content.Intent;
 import android.content.IntentFilter;
+import android.net.Uri;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -20,6 +21,7 @@ public class MainActivity extends AppCompatActivity {
     public void onClick(View view) {
         //sendBroadcast(new Intent("com.ben.android.broadcastreceiver"));
 
-        startService(new Intent(this, PluginService.class));
+        //startService(new Intent(this, PluginService.class));
+        getContentResolver().query(Uri.parse("content://com.ben.android.plugin_authority"),null,null,null,null);
     }
 }
